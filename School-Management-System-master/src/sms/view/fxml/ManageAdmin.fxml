@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.view.controller.ManageAdminController">
+    <children>
+        <Pane prefHeight="85.0" prefWidth="900.0" style="-fx-background-color: #66cdaa;">
+            <children>
+                <Text fill="#170202" fontSmoothingType="LCD" layoutX="257.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE USERS" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Text>
+                <JFXButton id="button" fx:id="Back" layoutX="24.0" layoutY="6.0" onAction="#Back" style="-fx-background-color: #66cdaa;" text=" ">
+                    <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #1976D2;">
+                            <image>
+                                <Image url="@../../other/img/Back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </Pane>
+        <Pane layoutX="37.0" layoutY="303.0" prefHeight="272.0" prefWidth="832.0" style="-fx-background-color: BLACK;" />
+        <TableView fx:id="usersTable" layoutX="40.0" layoutY="307.0" prefHeight="263.0" prefWidth="826.0" style="-fx-background-color: #66cdaa;">
+            <columns>
+                <TableColumn fx:id="UserIDColumn" prefWidth="200" text="Admin_ID" />
+                <TableColumn fx:id="UsernameColumn" prefWidth="200" text="Admin_name" />
+                <TableColumn fx:id="passwordColumn" prefWidth="200" text="Password" />
+                <TableColumn fx:id="UserstatusColumn" prefWidth="200" text="Status" />
+            </columns>
+        </TableView>
+      <Pane layoutX="37.0" layoutY="119.0" prefHeight="103.0" prefWidth="832.0" style="-fx-background-color: #66cdaa;">
+         <children>
+            <JFXButton fx:id="addUser" buttonType="RAISED" layoutX="182.0" layoutY="125.0" onAction="#addUser" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #66cdaa; -fx-text-fill: BLACK;" text="Add" textFill="#110101">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="userNameField" focusColor="#070000" labelFloat="true" layoutX="246.0" layoutY="35.0" prefHeight="37.0" prefWidth="193.0" promptText="ADMIN NAME" style="-fx-prompt-text-fill: BLACK; -fx-text-inner-color: BLACK;" unFocusColor="#0d0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" focusColor="#0d0101" labelFloat="true" layoutX="469.0" layoutY="34.0" prefHeight="38.0" prefWidth="196.0" promptText="PASSWORD" style="-fx-text-inner-color: BLACK; -fx-prompt-text-fill: BLACK;" unFocusColor="#170101">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+             <JFXTextField fx:id="userid" focusColor="#0d0101" labelFloat="true" layoutX="35.0" layoutY="35.0" prefHeight="37.0" prefWidth="193.0" promptText="ADMIN ID" style="-fx-prompt-text-fill: BLACK; -fx-text-inner-color: BLACK;" unFocusColor="#170101">
+                 <font>
+                     <Font size="16.0" />
+                 </font>
+             </JFXTextField>
+             <JFXTextField fx:id="userstatus" focusColor="#0d0101" labelFloat="true" layoutX="689.0" layoutY="35.0" prefHeight="37.0" prefWidth="135.0" promptText="STATUS" style="-fx-prompt-text-fill: BLACK; -fx-text-inner-color: BLACK;" unFocusColor="#170101">
+                 <font>
+                     <Font size="16.0" />
+                 </font>
+             </JFXTextField>
+
+            <JFXButton fx:id="searchUser" buttonType="RAISED" layoutX="307.0" layoutY="125.0" onAction="#searchUser" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #66cdaa; -fx-text-fill: BLACK;" text="Search" textFill="#170101">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="updateUser" buttonType="RAISED" layoutX="430.0" layoutY="125.0" onAction="#updateUser" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #66cdaa; -fx-text-fill: BLACK;" text="Update" textFill="#0a0101">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="deleteUser" buttonType="RAISED" layoutX="553.0" layoutY="125.0" onAction="#deleteUser" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #66cdaa; -fx-text-fill: BLACK;" text="Delete" textFill="#070000">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </JFXButton>
+
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

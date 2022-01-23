@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sms.view.controller.SchoolInfoController">
+    <children>
+        <Label layoutX="283.0" layoutY="113.0" prefHeight="23.0" prefWidth="138.0" text="Name of School :" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <TextField fx:id="SchoolNameField" layoutX="421.0" layoutY="112.0" prefHeight="25.0" prefWidth="242.0" promptText="Name of School" />
+        <Label layoutX="283.0" layoutY="161.0" prefHeight="23.0" prefWidth="138.0" text="Address :" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="SchoolAddressField" layoutX="421.0" layoutY="160.0" prefHeight="25.0" prefWidth="242.0" promptText="Address" />
+        <Label layoutX="283.0" layoutY="210.0" prefHeight="23.0" prefWidth="138.0" text="Classes Available :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <TextField fx:id="classAvailableField" layoutX="421.0" layoutY="209.0" prefHeight="25.0" prefWidth="242.0" promptText="Classes Available" />
+        <Label layoutX="283.0" layoutY="260.0" prefHeight="23.0" prefWidth="138.0" text="Type of School :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <TextField fx:id="schoolTypeField" layoutX="421.0" layoutY="259.0" prefHeight="25.0" prefWidth="242.0" promptText="Type of School" />
+        <Label layoutX="283.0" layoutY="309.0" prefHeight="23.0" prefWidth="138.0" text="Postal Code :" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <TextField fx:id="postalCodeField" layoutX="421.0" layoutY="308.0" prefHeight="25.0" prefWidth="242.0" promptText="Postal Code" />
+        <JFXButton fx:id="updateDetails" layoutX="396.0" layoutY="486.0" onAction="#updateDetails" style="-fx-background-color: #66cdaa; -fx-text-fill: BLACK;" text="UPDATE" textFill="#1e0101">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+            <stylesheets>
+                <URL value="@css/RegStudent.css" />
+            </stylesheets>
+        </JFXButton>
+        <Pane prefHeight="75.0" prefWidth="900.0" style="-fx-background-color: #66cdaa;" stylesheets="@css/RegStudent.css">
+            <children>
+                <Text fill="#170000" layoutX="223.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School Information">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Text>
+            <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="38.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #66cdaa;">
+               <image>
+                  <Image url="@../../other/img/Back.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+      <Label layoutX="283.0" layoutY="417.0" prefHeight="23.0" prefWidth="138.0" text="Principal ID: " textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="nameOfPrincipalField" layoutX="421.0" layoutY="416.0" prefHeight="25.0" prefWidth="242.0" promptText="Principal ID : " />
+      <Label layoutX="283.0" layoutY="365.0" prefHeight="23.0" prefWidth="138.0" text="School Contact No :" textFill="#f5f3f3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="ContactNoField" layoutX="421.0" layoutY="364.0" prefHeight="25.0" prefWidth="242.0" promptText="School's Contact No :" />
+        <JFXButton id="button" fx:id="Back" layoutX="26.0" layoutY="1.0" onAction="#Back" style="-fx-background-color: #66cdaa;" text=" ">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #1976D2;">
+                    <image>
+                        <Image url="@../../other/img/Back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>
